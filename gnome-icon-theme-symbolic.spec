@@ -1,6 +1,6 @@
 Summary: GNOME symbolic icons
 Name: gnome-icon-theme-symbolic
-Version: 2.30.0
+Version: 2.31.0
 Release: %mkrel 1
 License: CC-BY-SA
 Group: Graphical desktop/GNOME
