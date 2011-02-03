@@ -9,6 +9,7 @@ Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 BuildRequires: icon-naming-utils >= 0.8.1
 BuildRequires: git-core
+BuildRequires: gtk+2.0
 #BuildRequires: inkscape
 BuildArch: noarch
 Requires: gnome-icon-theme
