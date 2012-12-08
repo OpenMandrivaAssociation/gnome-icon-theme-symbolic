@@ -1,2 +1,4 @@
 sources:
-  "gnome-icon-theme-symbolic-3.4.0.tar.xz:"	b86bde04a9d4cd23654bf2735bba9a4433141d2c
+  gnome-icon-theme-symbolic-3.6.0.tar.xz: 8284f67ac085bb6abed3b28749aedffe766dc9bd
+---
+  gnome-icon-theme-symbolic-3.6.2.tar.xz: 8932cd97e4f1996d223ca867e49c0e0b0b1b7c75
