@@ -1,19 +1,20 @@
-Summary: GNOME symbolic icons
-Name: gnome-icon-theme-symbolic
-Version: 3.6.2
-Release: %mkrel 1
-License: CC-BY-SA
-Group: Graphical desktop/GNOME
-URL: http://www.gnome.org/
-Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/3.6/%{name}-%{version}.tar.xz
-BuildRequires: icon-naming-utils >= 0.8.1
-BuildRequires: git-core
-BuildRequires: gtk+2.0
-#BuildRequires: inkscape
-BuildArch: noarch
-Requires: gnome-icon-theme
-Requires(post): gtk+2.0
-Requires(postun): gtk+2.0
+%define url_ver %(echo %{version}|cut -d. -f1,2)
+
+Summary:	GNOME symbolic icons
+Name:		gnome-icon-theme-symbolic
+Version:	3.6.2
+Release:	1
+License:	CC-BY-SA
+Group:		Graphical desktop/GNOME
+Url:		http://www.gnome.org/
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/gnome-icon-theme-symbolic/%{url_ver}/%{name}-%{version}.tar.xz
+BuildArch:	noarch
+
+BuildRequires:	icon-naming-utils >= 0.8.1
+BuildRequires:	git-core
+BuildRequires:	gtk+2.0
+Requires:	gnome-icon-theme
+Requires(post,postun):	gtk+2.0
 
 %description
 Purpose of this icon theme is to extend the base icon theme that
@@ -31,7 +32,7 @@ the regular name.
 
 %build
 
-./configure --prefix=%_prefix --enable-icon-mapping
+./configure --prefix=%{_prefix} --enable-icon-mapping
 
 %make
 
@@ -40,4 +41,5 @@ the regular name.
 
 %files
 %doc README COPYING NEWS AUTHORS
-%{_datadir}/icons/gnome/scalable/*/*
+%{_iconsdir}/gnome/scalable/*/*
+
