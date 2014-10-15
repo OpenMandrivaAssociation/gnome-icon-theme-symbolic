@@ -2,8 +2,8 @@
 
 Summary:	GNOME symbolic icons
 Name:		gnome-icon-theme-symbolic
-Version:	3.6.2
-Release:	7
+Version:	3.12.0
+Release:	1
 License:	CC-BY-SA
 Group:		Graphical desktop/GNOME
 Url:		http://www.gnome.org/
@@ -27,6 +27,14 @@ only applications specifically looking up these symbolic icons will
 render them. If a -symbolic icon is missing, the app will fall back to
 the regular name.
 
+%package        devel
+Summary:        Development files for gnome-icon-theme
+Group:          Development/C
+Requires:       %{name} = %{version}-%{release}
+
+%description devel
+Development files for gnome-icon-theme
+
 %prep
 %setup -q
 
@@ -42,4 +50,7 @@ the regular name.
 %files
 %doc README COPYING NEWS AUTHORS
 %{_iconsdir}/gnome/scalable/*/*
+
+%files devel
+%{_datadir}/pkgconfig/%{name}.pc
 
