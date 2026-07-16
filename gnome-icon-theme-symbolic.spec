@@ -3,7 +3,7 @@
 Summary:	GNOME symbolic icons
 Name:		gnome-icon-theme-symbolic
 Version:	3.12.0
-Release:	1
+Release:	2
 License:	CC-BY-SA
 Group:		Graphical desktop/GNOME
 Url:		https://www.gnome.org/
